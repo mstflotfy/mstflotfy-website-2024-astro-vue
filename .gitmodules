@@ -1,0 +1,3 @@
+[submodule "src/styles/css-resets"]
+	path = src/styles/css-resets
+	url = https://github.com/mstflotfy/css-resets
