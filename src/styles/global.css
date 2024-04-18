@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Freehand';
+  src: url('/public/fonts/Freehand/Freehand-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   background-color: aliceblue;
 }
