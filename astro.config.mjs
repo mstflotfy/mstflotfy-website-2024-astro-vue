@@ -1,8 +1,10 @@
 import { defineConfig } from 'astro/config';
-
 import vue from "@astrojs/vue";
+import radixVue from "radix-vue";
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [vue()]
+  integrations: [
+    vue(),
+    radixVue
+  ]
 });
