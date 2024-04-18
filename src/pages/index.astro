@@ -1,13 +1,22 @@
 ---
-import Default from '../layouts/Default.astro';
-import '../styles/global.css'
+import Default from "../layouts/Default.astro";
+import "../styles/global.css";
 ---
 
 <Default title="mstfloty">
 	<main>
-		<h1>mstflotfy</h1>
+		<h1 class="hero">mstflotfy</h1>
 	</main>
 </Default>
 
 <style>
+	.hero {
+		font-family: "Freehand";
+		font-size: 26vw;
+		text-align: center;
+		line-height: 1.6;
+	}
+	/* Add media Query to handl line height for smaller/larger devices */
 </style>
+
+
