@@ -6,6 +6,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Caveat';
+  src: url('/public/fonts/Caveat/Caveat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 html {
   background-color: aliceblue;
 }
