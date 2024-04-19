@@ -32,35 +32,40 @@ const one = 'https://oneexercise.mstflotfy.com'
         </NavigationMenuLink>
       </NavigationMenuItem>
 
-      <NavigationMenuItem>
-        <NavigationMenuTrigger class="NavigationMenuLink" href="">
-          <Icon icon="ic:round-dark-mode" aria-hidden class="icon-clr" />
-        </NavigationMenuTrigger>
-      </NavigationMenuItem>
+      <div class="Nav__actions">
 
-      <NavigationMenuItem>
-        <NavigationMenuLink class="NavigationMenuLink" :href="yt" target="_blank">
-          <Icon icon="mdi:youtube" aria-hidden class="icon-sml" />
-        </NavigationMenuLink>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <NavigationMenuLink class="NavigationMenuLink" href="">
-          <Icon icon="ic:round-email" aria-hidden class="icon-sml" />
-        </NavigationMenuLink>
-      </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger class="NavigationMenuLink" href="">
+            <Icon icon="ic:round-dark-mode" aria-hidden class="icon-clr" />
+          </NavigationMenuTrigger>
+        </NavigationMenuItem>
 
-      <NavigationMenuItem>
-        <NavigationMenuLink class="NavigationMenuLink" href="/selfmastery" >
-          SelfMastery
-        </NavigationMenuLink>
-      </NavigationMenuItem>
+        <div class="contact">
+          <NavigationMenuItem>
+            <NavigationMenuLink class="NavigationMenuLink" :href="yt" target="_blank">
+              <Icon icon="mdi:youtube" aria-hidden class="icon-sml" />
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink class="NavigationMenuLink" href="mailto:contact@mstflotfy.com" target="_blank">
+              <Icon icon="ic:round-email" aria-hidden class="icon-sml" />
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+        </div>
 
-      <NavigationMenuItem>
-        <NavigationMenuLink class="NavigationMenuLink" :href="one" target="_blank">
-          OneExercise
-        </NavigationMenuLink>
-      </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink class="NavigationMenuLink page" href="/selfmastery">
+            SelfMastery
+          </NavigationMenuLink>
+        </NavigationMenuItem>
 
+        <NavigationMenuItem>
+          <NavigationMenuLink class="NavigationMenuLink page cta" :href="one" target="_blank">
+            OneExercise
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+      </div>
     </NavigationMenuList>
 
     <div class="ViewportPosition">
@@ -75,5 +80,27 @@ const one = 'https://oneexercise.mstflotfy.com'
   }
   .icon-sml {
     font-size: 1.6rem;
+  }
+  .page {
+    font-family: Caveat;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .cta {
+    background-color: #8CDBE2;
+    text-align: center;
+    padding: 1.6rem 2rem 1.6rem 1.6rem;
+    border-radius: 1.6rem;
+  }
+  .contact {
+    display: flex;
+  }
+  .NavigationMenuLink:has(.icon-sml) {
+    padding: 0.6rem;
+  }
+  .Nav__actions {
+    display: flex;
+    padding: 0.8rem 0.8rem;
+    gap: 2.1rem;
   }
 </style>

@@ -6,21 +6,22 @@
 
 .NavigationMenuRoot {
   position: sticky;
-  top: 4.2rem;
+  top: 0.5rem;
+  margin-top: 4.2rem;
   display: flex;
   justify-content: center;
   width: 100vw;
   z-index: 1;
+  opacity: 0.9;
 }
 
 .NavigationMenuList {
   display: flex;
   justify-content: center;
   background-color: #DDE6E7;
-  padding: 1rem;
   border-radius: 2.4rem;
-  max-width: 57rem;
-  height: 7.1rem;
+  padding: 0 0 0 2.4rem;
+  gap: 2.4rem;
   margin: 0;
 }
 
@@ -355,4 +356,5 @@ li {
 .mstflotfy-home {
   font-size: 3.2rem;
   font-family: 'Freehand'; 
+  font-weight: normal;
 }
