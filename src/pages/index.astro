@@ -6,23 +6,26 @@ import "../styles/global.css";
 
 <Default title="mstfloty">
 	<main>
-		<h1 class="hero">mstflotfy</h1>
-		<h2 class="landing__subtitle">Hi, I'm Mostafa Lotfy</h2>
-		<h2 
-			class="landing__subtitle landing__subtitle-small"
-		>
-			I explore & build tools for Productivity and SelfMastery
-		</h2>
+		<h1 class="landing__title">mstflotfy</h1>
+		<div class="landing__subtitle">
+			<h2>Hi, I'm Mostafa Lotfy</h2>
+			<h2 
+				class="landing__subtitle-small"
+			>
+				I explore & build tools for Productivity and SelfMastery
+			</h2>
+		</div>
 		<DeviceFrame />
 	</main>
 </Default>
 
 <style scoped>
-	.hero {
-		font-family: "Freehand";
+	.landing__title {
+		font-family: "Freehand", cursive;
 		font-size: 26vw;
 		text-align: center;
-		line-height: 1.6;
+		line-height: 1.2;
+		margin: 0rem 0 8rem 0;
 	}
 	/* Add media Query to handle line height for smaller/larger devices */
 	.landing__subtitle {
@@ -32,12 +35,14 @@ import "../styles/global.css";
 		line-height: 6.4rem;
 		font-weight: 300;
 		color: var(--m-3-sys-light-on-surface);
-		letter-spacing: -0.25px;
+		letter-spacing: -0.5px;
+		margin: 0 0 2.6rem 0;
 	}
 	.landing__subtitle-small {
 		font-size: 1.9rem;
 		line-height: 4.4rem;
 		color: var(--m-3-sys-light-primary);
-		letter-spacing: 0px;
+		letter-spacing: 2px;
+		font-weight: 200;
 	}
 </style>
