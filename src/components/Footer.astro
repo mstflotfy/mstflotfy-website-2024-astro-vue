@@ -1,14 +1,26 @@
 ---
 import { Icon } from "astro-icon/components";
+const youtube = "https://www.youtube.com/@theindiedev.mstflotfy";
+const github = "https://github.com/mstflotfy";
+const email = "mailto:contact@mstflotfy.com";
+const figma = "https://www.figma.com/@mstflotfy";
 ---
 
 <footer class="footer">
   <section id="footer__main-links"></section>
   <section id="footer__social-links">
-    <Icon name="mdi:youtube" size={24} />
-    <Icon name="mdi:github" size={24} />
-    <Icon name="mdi:email" size={24} />
-    <Icon name="solarFigma" size={26} />
+    <a href={youtube} target="_blank" rel="noopener">
+      <Icon name="mdi:youtube" size={24} />
+    </a>
+    <a href={github} target="_blank" rel="noopener">
+      <Icon name="mdi:github" size={24} />
+    </a>
+    <a href={email} target="_blank" rel="noopener">
+      <Icon name="mdi:email" size={24} />
+    </a>
+    <a href={figma} target="_blank" rel="noopener">
+      <Icon name="solarFigma" size={26} />
+    </a>
   </section>
   <small>&copy; Mostafa Lotfy (mstflotfy) 2024. All rights reserved.</small>
 </footer>
@@ -27,7 +39,7 @@ import { Icon } from "astro-icon/components";
     display: flex;
     gap: 2.1rem;
     justify-content: center;
-    padding: 2.6rem
+    padding: 2.6rem;
   }
   #footer__social-links *:hover {
     color: var(--m-3-sys-light-primary-fixed-dim);
