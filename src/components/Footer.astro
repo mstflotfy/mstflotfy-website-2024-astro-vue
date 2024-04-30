@@ -4,7 +4,7 @@ import { Icon } from "astro-icon/components";
 
 <footer class="footer">
   <section id="footer__main-links"></section>
-  <section id="social-links">
+  <section id="footer__social-links">
     <Icon name="mdi:youtube" size={24} />
     <Icon name="mdi:github" size={24} />
     <Icon name="mdi:email" size={24} />
@@ -22,5 +22,18 @@ import { Icon } from "astro-icon/components";
     margin-top: 10.6rem;
     padding: 6.4rem 0;
     text-align: center;
+  }
+  #footer__social-links {
+    display: flex;
+    gap: 2.1rem;
+    justify-content: center;
+    padding: 2.6rem
+  }
+  #footer__social-links *:hover {
+    color: var(--m-3-sys-light-primary-fixed-dim);
+  }
+
+  small {
+    display: block;
   }
 </style>
