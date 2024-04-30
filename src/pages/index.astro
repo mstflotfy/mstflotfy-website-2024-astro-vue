@@ -8,7 +8,11 @@ import "../styles/global.css";
 	<main>
 		<h1 class="landing__title">mstflotfy</h1>
 		<div class="landing__subtitle">
-			<h2>Hi, I'm Mostafa Lotfy</h2>
+			<h2
+				class="landing__subtitle-large"
+			>
+				Hi, I'm Mostafa Lotfy
+			</h2>
 			<h2 
 				class="landing__subtitle-small"
 			>
@@ -31,18 +35,20 @@ import "../styles/global.css";
 	.landing__subtitle {
 		font-family: "Gloria Hallelujah", monospace;
 		text-align: center;
-		font-size: 3.4rem;
+		font-size: 2.4rem;
 		line-height: 6.4rem;
-		font-weight: 300;
 		color: var(--m-3-sys-light-on-surface);
 		letter-spacing: -0.5px;
 		margin: 0 0 2.6rem 0;
 	}
+	.landing__subtitle-large {
+		font-weight: 100;
+	}
 	.landing__subtitle-small {
-		font-size: 1.9rem;
+		font-size: 1.6rem;
 		line-height: 4.4rem;
 		color: var(--m-3-sys-light-primary);
-		letter-spacing: 2px;
+		letter-spacing: 0.5px;
 		font-weight: 200;
 	}
 </style>
