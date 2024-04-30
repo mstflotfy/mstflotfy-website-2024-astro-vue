@@ -1,13 +1,17 @@
 ---
 import { Icon } from "astro-icon/components";
+import OneExerciseLogo from './OneExerciseLogo.astro'
 const youtube = "https://www.youtube.com/@theindiedev.mstflotfy";
 const github = "https://github.com/mstflotfy";
 const email = "mailto:contact@mstflotfy.com";
 const figma = "https://www.figma.com/@mstflotfy";
+const footerItemsColor = "var(--m-3-sys-light-on-surface-variant)"
 ---
 
 <footer class="footer">
-  <section id="footer__main-links"></section>
+  <section id="footer__main-links">
+    <OneExerciseLogo fillColor={footerItemsColor} />
+  </section>
   <section id="footer__social-links">
     <a href={youtube} target="_blank" rel="noopener">
       <Icon name="mdi:youtube" size={24} />
