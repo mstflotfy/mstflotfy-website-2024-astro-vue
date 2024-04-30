@@ -29,7 +29,7 @@ const footerItemsColor = "var(--m-3-sys-light-on-surface-variant)"
   <small>&copy; Mostafa Lotfy (mstflotfy) 2024. All rights reserved.</small>
 </footer>
 
-<style>
+<style define:vars={{ footerItemsColor }}>
   .footer {
     background-color: var(--m-3-sys-light-surface-variant);
     height: 41rem;
@@ -38,6 +38,7 @@ const footerItemsColor = "var(--m-3-sys-light-on-surface-variant)"
     margin-top: 10.6rem;
     padding: 6.4rem 0;
     text-align: center;
+    color: var(--footerItemsColor)
   }
   #footer__social-links {
     display: flex;
